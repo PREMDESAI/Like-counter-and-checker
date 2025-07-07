@@ -1,0 +1,20 @@
+.addRecommendation {
+  @apply relative overflow-x-hidden h-full;
+
+  & > div {
+    @apply pt-4 pb-2 px-3;
+  }
+
+  & .add {
+    @apply absolute top-0 transform translate-x-full transition-transform w-full bg-white;
+
+    &.shown {
+      @apply transform-none;
+    }
+
+    &.showSelectMessage {
+      @apply top-[40px];
+    }
+  }
+}
+
